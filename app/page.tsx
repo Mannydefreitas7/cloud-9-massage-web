@@ -84,36 +84,34 @@ export default function Home() {
         <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
             <Link href="/" className="flex items-center">
-              <h1 className="text-2xl font-serif font-bold text-amber-800 transition-all duration-300 hover:text-amber-600">
-                Serenity Spa
-              </h1>
+              <Image alt="" src={"./logo-light.svg"} width={120} height={120} />
             </Link>
             <nav className="hidden md:flex items-center space-x-8">
               <a
                   href="#services"
                   onClick={(e) => scrollToSection(e, "services")}
-                  className="text-amber-900 hover:text-amber-600 transition-colors duration-300 font-medium"
+                  className="text-neutral-800 hover:text-amber-600 transition-colors duration-300 font-medium"
               >
                 Services
               </a>
               <a
                   href="#about"
                   onClick={(e) => scrollToSection(e, "about")}
-                  className="text-amber-900 hover:text-amber-600 transition-colors duration-300 font-medium"
+                  className="text-neutral-800 hover:text-amber-600 transition-colors duration-300 font-medium"
               >
                 About
               </a>
               <a
                   href="#testimonials"
                   onClick={(e) => scrollToSection(e, "testimonials")}
-                  className="text-amber-900 hover:text-amber-600 transition-colors duration-300 font-medium"
+                  className="text-neutral-800 hover:text-amber-600 transition-colors duration-300 font-medium"
               >
                 Testimonials
               </a>
               <a
                   href="#booking"
                   onClick={(e) => scrollToSection(e, "booking")}
-                  className="bg-amber-600 hover:bg-amber-700 text-white px-5 py-2 rounded-full transition-all duration-300 transform hover:scale-105 font-medium"
+                  className="border-amber-700 border-2 bg-transparent text-amber-700 hover:bg-amber-700 hover:text-white px-5 py-2 rounded-full transition-all duration-300 transform hover:scale-105 font-medium"
               >
                 Book Now
               </a>
@@ -177,7 +175,7 @@ export default function Home() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-amber-900 leading-tight animate-fade-in">
                 Discover True Relaxation & Wellness
               </h1>
-              <p className="text-lg text-amber-700 animate-fade-in-delay">
+              <p className="text-lg text-neutral-700 animate-fade-in-delay">
                 Experience the healing power of touch with our expert massage therapists. Restore balance to your body and
                 mind in our tranquil sanctuary.
               </p>
@@ -193,13 +191,13 @@ export default function Home() {
                 <a
                     href="#services"
                     onClick={(e) => scrollToSection(e, "services")}
-                    className="border border-amber-600 text-amber-600 hover:bg-amber-50 px-6 py-3 rounded-full transition-all duration-300"
+                    className="border border-amber-600 text-amber-600 hover:bg-amber-100 px-6 py-3 rounded-full transition-all duration-300"
                 >
                   Our Services
                 </a>
               </div>
             </div>
-            <div className="relative h-[300px] md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl">
+            <div className="relative h-[300px] md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-xl">
               <Image
                   src="/placeholder.svg?height=1000&width=800"
                   alt="Massage therapy session"
@@ -215,10 +213,10 @@ export default function Home() {
         <section id="services" className="py-16 sm:py-20 scroll-mt-20">
           <div className="container mx-auto px-4">
             <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-amber-900 mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-4">
                 Our Therapeutic Services
               </h2>
-              <p className="text-amber-700">
+              <p className="text-neutral-700">
                 We offer a variety of massage techniques tailored to your specific needs, helping you achieve optimal
                 wellness and relaxation.
               </p>
@@ -291,11 +289,11 @@ export default function Home() {
             </div>
             <div className="space-y-4 sm:space-y-6 max-w-lg order-1 md:order-2">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-amber-900">About Serenity Spa</h2>
-              <p className="text-amber-700">
+              <p className="text-neutral-700">
                 Founded in 2010, Serenity Spa has been a sanctuary for those seeking relief from stress and physical
                 discomfort. Our team of licensed massage therapists brings years of experience and a passion for healing.
               </p>
-              <p className="text-amber-700">
+              <p className="text-neutral-700">
                 We believe in the power of touch to heal, restore, and rejuvenate. Our approach combines traditional
                 techniques with modern knowledge to provide you with the best therapeutic experience.
               </p>
@@ -304,19 +302,19 @@ export default function Home() {
                   <div className="bg-white p-2 rounded-full shadow-md">
                     <MapPin className="w-5 h-5 text-amber-600" />
                   </div>
-                  <span className="text-amber-800">123 Wellness Avenue, Serenity City</span>
+                  <span className="text-neutral-800">123 Wellness Avenue, Serenity City</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="bg-white p-2 rounded-full shadow-md">
                     <Clock className="w-5 h-5 text-amber-600" />
                   </div>
-                  <span className="text-amber-800">Open Mon-Sat: 9am - 8pm, Sun: 10am - 6pm</span>
+                  <span className="text-neutral-800">Open Mon-Sat: 9am - 8pm, Sun: 10am - 6pm</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="bg-white p-2 rounded-full shadow-md">
                     <Phone className="w-5 h-5 text-amber-600" />
                   </div>
-                  <span className="text-amber-800">(555) 123-4567</span>
+                  <span className="text-neutral-800">(555) 123-4567</span>
                 </div>
               </div>
             </div>
@@ -330,7 +328,7 @@ export default function Home() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-amber-900 mb-4">
                 What Our Clients Say
               </h2>
-              <p className="text-amber-700">
+              <p className="text-neutral-700">
                 Don't just take our word for it. Here's what our clients have to say about their experiences at Serenity
                 Spa.
               </p>
@@ -364,13 +362,14 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-4">Book Your Appointment</h2>
-              <p className="text-amber-100">
-                Take the first step toward relaxation and wellness. Schedule your appointment today and experience the
-                Serenity difference.
+              <p className="text-white/70">
+                Take the first step toward relaxation and wellness.
               </p>
+              <p className="text-white/70">Schedule your appointment today and experience the
+                Serenity difference.</p>
             </div>
 
-            <div className="max-w-2xl mx-auto bg-white text-amber-900 rounded-2xl shadow-xl p-4 sm:p-6 md:p-10">
+            <div className="max-w-2xl mx-auto bg-white/80 text-neutral-900 rounded-2xl shadow-xl p-4 sm:p-6 md:p-10">
               <BookingForm />
             </div>
           </div>
@@ -381,8 +380,10 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div>
-                <h3 className="text-xl font-serif font-bold mb-4">Serenity Spa</h3>
-                <p className="text-amber-100">Your sanctuary for relaxation and wellness in the heart of the city.</p>
+                <Link href="/" className="flex items-center justify-center w-full mb-4">
+                  <Image alt="" src={"./logo-dark.svg"} width={150} height={150} />
+                </Link>
+                <p className="text-white/80 text-center">Your sanctuary for relaxation<br/>and wellness in the heart of the city.</p>
               </div>
               <div>
                 <h4 className="text-lg font-bold mb-4">Quick Links</h4>
@@ -436,15 +437,15 @@ export default function Home() {
               <div>
                 <h4 className="text-lg font-bold mb-4">Contact</h4>
                 <ul className="space-y-2 text-amber-100">
-                  <li>123 Wellness Avenue</li>
-                  <li>Serenity City, SC 12345</li>
+                  <li>Wilton Place</li>
+                  <li>Los Angeles, CA 90038</li>
                   <li>(555) 123-4567</li>
                   <li>info@serenityspa.com</li>
                 </ul>
               </div>
             </div>
             <div className="border-t border-amber-700 mt-8 pt-8 text-center text-amber-100">
-              <p>&copy; {new Date().getFullYear()} Serenity Spa. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} Cloud 9 Spa. All rights reserved.</p>
             </div>
           </div>
         </footer>

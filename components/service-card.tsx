@@ -49,14 +49,14 @@ export default function ServiceCard({
         />
       </div>
       <div className="p-4 sm:p-6 flex flex-col flex-grow">
-        <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-900 mb-2">{title}</h3>
-        <p className="text-amber-700 mb-4 flex-grow">{description}</p>
-        <div className="flex items-center text-amber-600 mb-4">
+        <h3 className="text-lg sm:text-xl font-serif font-bold text-neutral-900 mb-2">{title}</h3>
+        <p className="text-neutral-700 mb-4 flex-grow">{description}</p>
+        <div className="flex items-center text-neutral-500 mb-4">
           <Clock className="w-4 h-4 mr-2" />
           <span>{duration}</span>
         </div>
         <div className="flex items-center justify-between flex-wrap gap-2">
-          <span className="text-lg sm:text-xl font-bold text-amber-900">${price}</span>
+          <span className="text-lg sm:text-xl italic font-bold text-amber-900">${price}</span>
           <a
             href={bookingLink}
             onClick={onBookingClick}
