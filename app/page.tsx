@@ -199,7 +199,7 @@ export default function Home() {
             </div>
             <div className="relative h-[300px] md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-xl">
               <Image
-                  src="/main.png"
+                  src="/banner.png"
                   alt="Massage therapy session"
                   fill
                   className="object-cover"
@@ -236,11 +236,23 @@ export default function Home() {
                   onBookingClick={() => {}}
               />
               <ServiceCard
+                  title="Prenatal Massage"
+                  description="Our prenatal massage is designed to relieve the physical discomforts of pregnancy, such as back pain, leg cramps, and swollen ankles."
+                  prices={{
+                    "30 min": 60,
+                    "60 min": 90,
+                    "90 min": 120,
+                  }}
+                  imageSrc="/prenatal.png"
+                  bookingLink="#booking"
+                  onBookingClick={() => {}}
+              />
+              <ServiceCard
                   title="Deep Tissue Massage"
                   description="More intense massage that targets deeper muscle layers to release chronic muscle tension and pain."
                   imageSrc="/depp-tissue.png"
                   prices={{
-                    "30 min": 950,
+                    "30 min": 50,
                     "60 min": 80,
                     "90 min": 110,
                   }}
@@ -260,6 +272,30 @@ export default function Home() {
                   onBookingClick={() => {}}
               />
               <ServiceCard
+                  title="Hot Stone Massage"
+                  description="Our hot stone massage is perfect for those who need to unwind and relax."
+                  prices={{
+                    "30 min": 50,
+                    "60 min": 80,
+                    "90 min": 110,
+                  }}
+                  imageSrc="/hot-stone.png"
+                  bookingLink="#booking"
+                  onBookingClick={() => {}}
+              />
+              <ServiceCard
+                  title="Aromatherapy Massage"
+                  description="Our aromatherapy massage is perfect for those who need to unwind and relax. Our therapists use essential oils derived from plants to enhance the massage experience and promote relaxation."
+                  prices={{
+                    "30 min": 70,
+                    "60 min": 100,
+                    "90 min": 150,
+                  }}
+                  imageSrc="/aromatherapy.png"
+                  bookingLink="#booking"
+                  onBookingClick={() => {}}
+              />
+              <ServiceCard
                   title="Thai Massage"
                   description="Combines acupressure, assisted stretching, and rhythmic compressions to improve flexibility, relieve tension, and promote relaxation and overall well-being."
                   prices={{
@@ -268,6 +304,19 @@ export default function Home() {
                     "90 min": 100,
                   }}
                   imageSrc="/thai.png"
+                  bookingLink="#booking"
+                  onBookingClick={() => {}}
+              />
+
+              <ServiceCard
+                  title="Couples Massage"
+                  description="Enjoy a romantic and relaxing massage experience with your partner or friend. Our couples massage is the perfect way to unwind and reconnect in a peaceful and serene environment."
+                  prices={{
+                    "30 min": 90,
+                    "60 min": 150,
+                    "90 min": 200,
+                  }}
+                  imageSrc="/couples.png"
                   bookingLink="#booking"
                   onBookingClick={() => {}}
               />
@@ -296,13 +345,13 @@ export default function Home() {
                   <div className="bg-white p-2 rounded-full shadow-md">
                     <MapPin className="w-5 h-5 text-amber-600" />
                   </div>
-                  <span className="text-neutral-800">123 Wellness Avenue, Serenity City</span>
+                  <span className="text-neutral-800">Wilton Place</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="bg-white p-2 rounded-full shadow-md">
                     <Clock className="w-5 h-5 text-amber-600" />
                   </div>
-                  <span className="text-neutral-800">Open Mon-Sat: 9am - 8pm, Sun: 10am - 6pm</span>
+                  <span className="text-neutral-800">Open Mon-Sun: 10am - 9:30pm</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="bg-white p-2 rounded-full shadow-md">
@@ -349,18 +398,18 @@ export default function Home() {
         </section>
 
         {/* Booking Section */}
-        <section id="booking" className="py-16 sm:py-20 bg-amber-800 text-white scroll-mt-20">
+        <section id="booking" className="py-16 sm:py-20 bg-amber-50  scroll-mt-20">
           <div className="container mx-auto px-4">
             <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-4">Book Your Appointment</h2>
-              <p className="text-white/70">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-4 text-amber-800">Book Your Appointment</h2>
+              <p className="text-black/70">
                 Take the first step toward relaxation and wellness.
               </p>
-              <p className="text-white/70">Schedule your appointment today and experience the
+              <p className="text-black/70">Schedule your appointment today and experience the
                 Serenity difference.</p>
             </div>
 
-            <div className="max-w-2xl mx-auto bg-white/80 text-neutral-900 rounded-2xl shadow-xl p-4 sm:p-6 md:p-10">
+            <div className="max-w-2xl mx-auto bg-white text-neutral-900 rounded-2xl shadow-xl p-4 sm:p-6 md:p-10">
               <BookingForm />
             </div>
           </div>
