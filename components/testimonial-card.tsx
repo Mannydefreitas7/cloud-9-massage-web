@@ -7,7 +7,7 @@ interface TestimonialCardProps {
   quote: string
   author: string
   role: string
-  imageSrc: string
+  imageSrc?: string
 }
 
 export default function TestimonialCard({ quote, author, role, imageSrc }: TestimonialCardProps) {
@@ -27,8 +27,8 @@ export default function TestimonialCard({ quote, author, role, imageSrc }: Testi
       </div>
       <p className="text-sm sm:text-base text-neutral-700 mb-6 flex-grow">{quote}</p>
       <div className="flex items-center">
-        <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4">
-          <Image src={imageSrc || "/placeholder.svg"} alt={author} fill className="object-cover" />
+        <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4 hidden">
+          <Image src={imageSrc ?? "/placeholder.svg"} alt={author} fill className="object-cover" />
         </div>
         <div>
           <h4 className="font-bold text-amber-900">{author}</h4>

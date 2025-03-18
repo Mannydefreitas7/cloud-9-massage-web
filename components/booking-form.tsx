@@ -77,7 +77,7 @@ export default function BookingForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 sm:space-y-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-6">
           <FormField
             control={form.control}
             name="name"
@@ -150,7 +150,7 @@ export default function BookingForm() {
             control={form.control}
             name="date"
             render={({ field }) => (
-              <FormItem className="flex flex-col">
+              <FormItem>
                 <FormLabel>Date</FormLabel>
                 <Popover>
                   <PopoverTrigger asChild>

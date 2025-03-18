@@ -199,7 +199,7 @@ export default function Home() {
             </div>
             <div className="relative h-[300px] md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-xl">
               <Image
-                  src="/placeholder.svg?height=1000&width=800"
+                  src="/main.png"
                   alt="Massage therapy session"
                   fill
                   className="object-cover"
@@ -222,61 +222,56 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
               <ServiceCard
                   title="Swedish Massage"
-                  description="A gentle, relaxing massage that uses long strokes, kneading, and circular movements to help you relax and energize."
-                  duration="60 min"
-                  price={85}
-                  imageSrc="/placeholder.svg?height=400&width=600"
+                  description="Gentle and relaxing massage that promotes relaxation and improves circulation."
+                  prices={{
+                    "30 min": 45,
+                    "60 min": 70,
+                    "90 min": 100,
+                  }}
+                  imageSrc="/swedish.png"
                   bookingLink="#booking"
-                  onBookingClick={(e) => scrollToSection(e, "booking")}
+                  onBookingClick={() => {}}
               />
               <ServiceCard
                   title="Deep Tissue Massage"
-                  description="Targets the deeper layers of muscle and connective tissue to release chronic patterns of tension."
-                  duration="60 min"
-                  price={95}
-                  imageSrc="/placeholder.svg?height=400&width=600"
+                  description="More intense massage that targets deeper muscle layers to release chronic muscle tension and pain."
+                  imageSrc="/depp-tissue.png"
+                  prices={{
+                    "30 min": 950,
+                    "60 min": 80,
+                    "90 min": 110,
+                  }}
                   bookingLink="#booking"
-                  onBookingClick={(e) => scrollToSection(e, "booking")}
-              />
-              <ServiceCard
-                  title="Hot Stone Massage"
-                  description="Smooth, heated stones are placed on specific points on the body to warm and loosen tight muscles."
-                  duration="75 min"
-                  price={110}
-                  imageSrc="/placeholder.svg?height=400&width=600"
-                  bookingLink="#booking"
-                  onBookingClick={(e) => scrollToSection(e, "booking")}
-              />
-              <ServiceCard
-                  title="Aromatherapy Massage"
-                  description="Essential oils are added to a relaxing massage to promote healing and enhance the therapeutic benefits."
-                  duration="60 min"
-                  price={90}
-                  imageSrc="/placeholder.svg?height=400&width=600"
-                  bookingLink="#booking"
-                  onBookingClick={(e) => scrollToSection(e, "booking")}
+                  onBookingClick={() => {}}
               />
               <ServiceCard
                   title="Sports Massage"
-                  description="Focuses on areas of the body that are overused and stressed from repetitive movements."
-                  duration="60 min"
-                  price={95}
-                  imageSrc="/placeholder.svg?height=400&width=600"
+                  description="Designed for athletes and active individuals to prevent and treat injuries, enhance performance, and aid in recovery."
+                  prices={{
+                    "30 min": 50,
+                    "60 min": 80,
+                    "90 min": 110,
+                  }}
+                  imageSrc="/sports.png"
                   bookingLink="#booking"
-                  onBookingClick={(e) => scrollToSection(e, "booking")}
+                  onBookingClick={() => {}}
               />
               <ServiceCard
-                  title="Prenatal Massage"
-                  description="Specially designed for expectant mothers to reduce stress, decrease swelling, and relieve muscle and joint pain."
-                  duration="60 min"
-                  price={90}
-                  imageSrc="/placeholder.svg?height=400&width=600"
+                  title="Thai Massage"
+                  description="Combines acupressure, assisted stretching, and rhythmic compressions to improve flexibility, relieve tension, and promote relaxation and overall well-being."
+                  prices={{
+                    "30 min": 45,
+                    "60 min": 70,
+                    "90 min": 100,
+                  }}
+                  imageSrc="/thai.png"
                   bookingLink="#booking"
-                  onBookingClick={(e) => scrollToSection(e, "booking")}
+                  onBookingClick={() => {}}
               />
+
             </div>
           </div>
         </section>
@@ -285,13 +280,12 @@ export default function Home() {
         <section id="about" className="py-16 sm:py-20 bg-amber-50 scroll-mt-20">
           <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="relative h-[300px] md:h-[400px] lg:h-[600px] rounded-2xl overflow-hidden shadow-xl order-2 md:order-1">
-              <Image src="/placeholder.svg?height=1200&width=800" alt="Our spa interior" fill className="object-cover" />
+              <Image src="/about.png" alt="Our spa interior" fill className="object-cover" />
             </div>
             <div className="space-y-4 sm:space-y-6 max-w-lg order-1 md:order-2">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-amber-900">About Serenity Spa</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-amber-900">About Cloud Nine Spa</h2>
               <p className="text-neutral-700">
-                Founded in 2010, Serenity Spa has been a sanctuary for those seeking relief from stress and physical
-                discomfort. Our team of licensed massage therapists brings years of experience and a passion for healing.
+                Cloud Nine Spa is more than just a place to get a massage—it’s a full relaxation experience inspired by the healing traditions of Thai and modern wellness techniques.
               </p>
               <p className="text-neutral-700">
                 We believe in the power of touch to heal, restore, and rejuvenate. Our approach combines traditional
@@ -339,19 +333,16 @@ export default function Home() {
                   quote="The deep tissue massage I received was exactly what I needed. My therapist listened to my concerns and focused on my problem areas. I left feeling like a new person!"
                   author="Sarah Johnson"
                   role="Regular Client"
-                  imageSrc="/placeholder.svg?height=200&width=200"
               />
               <TestimonialCard
                   quote="I've been coming to Serenity Spa for over a year now, and I can honestly say it's changed my life. The prenatal massages helped me through my pregnancy, and now I come monthly for stress relief."
                   author="Michael Chen"
                   role="Monthly Member"
-                  imageSrc="/placeholder.svg?height=200&width=200"
               />
               <TestimonialCard
                   quote="As an athlete, I need regular bodywork to stay in top condition. The sports massage techniques used here have significantly improved my recovery time and performance."
                   author="Emma Rodriguez"
                   role="Professional Athlete"
-                  imageSrc="/placeholder.svg?height=200&width=200"
               />
             </div>
           </div>
@@ -429,9 +420,9 @@ export default function Home() {
               <div>
                 <h4 className="text-lg font-bold mb-4">Hours</h4>
                 <ul className="space-y-2 text-amber-100">
-                  <li>Monday - Friday: 9am - 8pm</li>
-                  <li>Saturday: 9am - 8pm</li>
-                  <li>Sunday: 10am - 6pm</li>
+                  <li>Monday - Friday: 10:00am - 9:30pm</li>
+                  <li>Saturday: 10:00am - 9:30pm</li>
+                  <li>Sunday: 10:00am - 9:30pm</li>
                 </ul>
               </div>
               <div>
@@ -439,8 +430,6 @@ export default function Home() {
                 <ul className="space-y-2 text-amber-100">
                   <li>Wilton Place</li>
                   <li>Los Angeles, CA 90038</li>
-                  <li>(555) 123-4567</li>
-                  <li>info@serenityspa.com</li>
                 </ul>
               </div>
             </div>

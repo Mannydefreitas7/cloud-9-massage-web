@@ -8,7 +8,7 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-    title: "Serenity Spa | Massage Therapy & Wellness",
+    title: "Cloud 9 Massage | Massage Therapy & Wellness",
     description: "Experience the healing power of touch with our expert massage therapists. Book your appointment today.",
     generator: 'v0.dev'
 }
