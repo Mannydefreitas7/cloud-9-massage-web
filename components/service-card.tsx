@@ -4,7 +4,7 @@ import React, {useEffect} from "react"
 
 import { useState } from "react"
 import Image from "next/image"
-import { Clock, ArrowRight } from "lucide-react"
+import { Clock } from "lucide-react"
 import { motion } from "framer-motion"
 
 interface ServiceCardProps {
@@ -20,9 +20,7 @@ export default function ServiceCard({
   title,
   description,
     prices,
-  imageSrc,
-  bookingLink,
-  onBookingClick,
+  imageSrc
 }: ServiceCardProps) {
   const [isHovered, setIsHovered] = useState(false)
 
@@ -69,6 +67,7 @@ useEffect(() => {
       <div className="relative h-40 sm:h-48 w-full">
         <Image
           src={imageSrc || "/placeholder.svg"}
+          sizes={"200px"}
           alt={title}
           fill
           className="object-cover transition-transform duration-700"

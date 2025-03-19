@@ -84,32 +84,35 @@ export default function Home() {
         <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
             <Link href="/" className="flex items-center">
-              <Image alt="" src={"./logo-light.svg"} width={120} height={120} />
+              <Image alt="logo" src={"./logo-light.svg"} width="0"
+                     height="0"
+                     sizes="100vw"
+                     className="w-full h-auto"  />
             </Link>
             <nav className="hidden md:flex items-center space-x-8">
               <a
-                  href="#services"
+                  href={"#services"}
                   onClick={(e) => scrollToSection(e, "services")}
                   className="text-neutral-800 hover:text-amber-600 transition-colors duration-300 font-medium"
               >
                 Services
               </a>
               <a
-                  href="#about"
+                  href={"#about"}
                   onClick={(e) => scrollToSection(e, "about")}
                   className="text-neutral-800 hover:text-amber-600 transition-colors duration-300 font-medium"
               >
                 About
               </a>
               <a
-                  href="#testimonials"
+                  href={"#testimonials"}
                   onClick={(e) => scrollToSection(e, "testimonials")}
                   className="text-neutral-800 hover:text-amber-600 transition-colors duration-300 font-medium"
               >
                 Testimonials
               </a>
               <a
-                  href="#booking"
+                  href={"#booking"}
                   onClick={(e) => scrollToSection(e, "booking")}
                   className="border-amber-700 border-2 bg-transparent text-amber-700 hover:bg-amber-700 hover:text-white px-5 py-2 rounded-full transition-all duration-300 transform hover:scale-105 font-medium"
               >
@@ -134,28 +137,28 @@ export default function Home() {
                 <SheetContent side="right" className="bg-white">
                   <div className="flex flex-col space-y-4 mt-8">
                     <a
-                        href="#services"
+                        href={"#services"}
                         onClick={(e) => scrollToSection(e, "services")}
                         className="text-amber-900 hover:text-amber-600 transition-colors duration-300 text-lg font-medium"
                     >
                       Services
                     </a>
                     <a
-                        href="#about"
+                        href={"#about"}
                         onClick={(e) => scrollToSection(e, "about")}
                         className="text-amber-900 hover:text-amber-600 transition-colors duration-300 text-lg font-medium"
                     >
                       About
                     </a>
                     <a
-                        href="#testimonials"
+                        href={"#testimonials"}
                         onClick={(e) => scrollToSection(e, "testimonials")}
                         className="text-amber-900 hover:text-amber-600 transition-colors duration-300 text-lg font-medium"
                     >
                       Testimonials
                     </a>
                     <a
-                        href="#booking"
+                        href={"#booking"}
                         onClick={(e) => scrollToSection(e, "booking")}
                         className="bg-amber-600 hover:bg-amber-700 text-white px-5 py-2 rounded-full transition-all duration-300 transform hover:scale-105 font-medium text-center"
                     >
@@ -181,7 +184,7 @@ export default function Home() {
               </p>
               <div className="pt-4 flex space-x-4 animate-fade-in-delay-2">
                 <a
-                    href="#booking"
+                    href={"#booking"}
                     onClick={(e) => scrollToSection(e, "booking")}
                     className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 font-medium"
                 >
@@ -189,7 +192,7 @@ export default function Home() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a
-                    href="#services"
+                    href={"#services"}
                     onClick={(e) => scrollToSection(e, "services")}
                     className="border border-amber-600 text-amber-600 hover:bg-amber-100 px-6 py-3 rounded-full transition-all duration-300"
                 >
@@ -202,8 +205,10 @@ export default function Home() {
                   src="/banner.png"
                   alt="Massage therapy session"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover"
-                  priority
+                  placeholder="blur"
+                  blurDataURL={'/banner.png'}
               />
             </div>
           </div>
@@ -329,7 +334,7 @@ export default function Home() {
         <section id="about" className="py-16 sm:py-20 bg-amber-50 scroll-mt-20">
           <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="relative h-[300px] md:h-[400px] lg:h-[600px] rounded-2xl overflow-hidden shadow-xl order-2 md:order-1">
-              <Image src="/about.png" alt="Our spa interior" fill className="object-cover" />
+              <Image src="/about.png" alt="Our spa interior" fill className="object-cover" sizes={"200px"} />
             </div>
             <div className="space-y-4 sm:space-y-6 max-w-lg order-1 md:order-2">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-amber-900">About Cloud Nine Spa</h2>
@@ -372,7 +377,7 @@ export default function Home() {
                 What Our Clients Say
               </h2>
               <p className="text-neutral-700">
-                Don't just take our word for it. Here's what our clients have to say about their experiences at Serenity
+                Don\'t just take our word for it. Here\'s what our clients have to say about their experiences at Serenity
                 Spa.
               </p>
             </div>
@@ -421,7 +426,10 @@ export default function Home() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div>
                 <Link href="/" className="flex items-center justify-center w-full mb-4">
-                  <Image alt="" src={"./logo-dark.svg"} width={150} height={150} />
+                  <Image alt="logo" src={"./logo-dark.svg"} width="0"
+                         height="0"
+                         sizes="100vw"
+                         className="w-full h-auto" />
                 </Link>
                 <p className="text-white/80 text-center">Your sanctuary for relaxation<br/>and wellness in the heart of the city.</p>
               </div>
@@ -430,7 +438,7 @@ export default function Home() {
                 <ul className="space-y-2">
                   <li>
                     <a
-                        href="#services"
+                        href={"#services"}
                         onClick={(e) => scrollToSection(e, "services")}
                         className="text-amber-100 hover:text-white transition-colors"
                     >
@@ -439,7 +447,7 @@ export default function Home() {
                   </li>
                   <li>
                     <a
-                        href="#about"
+                        href={"#about"}
                         onClick={(e) => scrollToSection(e, "about")}
                         className="text-amber-100 hover:text-white transition-colors"
                     >
@@ -448,7 +456,7 @@ export default function Home() {
                   </li>
                   <li>
                     <a
-                        href="#testimonials"
+                        href={"#testimonials"}
                         onClick={(e) => scrollToSection(e, "testimonials")}
                         className="text-amber-100 hover:text-white transition-colors"
                     >
@@ -457,7 +465,7 @@ export default function Home() {
                   </li>
                   <li>
                     <a
-                        href="#booking"
+                        href={"#booking"}
                         onClick={(e) => scrollToSection(e, "booking")}
                         className="text-amber-100 hover:text-white transition-colors"
                     >
