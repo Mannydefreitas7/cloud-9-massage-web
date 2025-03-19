@@ -182,7 +182,7 @@ export default function Home() {
                 Experience the healing power of touch with our expert massage therapists. Restore balance to your body and
                 mind in our tranquil sanctuary.
               </p>
-              <div className="pt-4 flex space-x-4 animate-fade-in-delay-2">
+              <div className="pt-4 gap-2 md:gap-0 flex flex-col items-center md:flex-row md:space-x-4 animate-fade-in-delay-2">
                 <a
                     href={"#booking"}
                     onClick={(e) => scrollToSection(e, "booking")}
@@ -423,13 +423,13 @@ export default function Home() {
         {/* Footer */}
         <footer className="bg-amber-900 text-white py-10 sm:py-12">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div>
                 <Link href="/" className="flex items-center justify-center w-full mb-4">
                   <Image alt="logo" src={"./logo-dark.svg"} width="0"
                          height="0"
-                         sizes="100vw"
-                         className="w-full h-auto" />
+                         sizes="50vw"
+                         className="w-1/2 h-auto" />
                 </Link>
                 <p className="text-white/80 text-center">Your sanctuary for relaxation<br/>and wellness in the heart of the city.</p>
               </div>
