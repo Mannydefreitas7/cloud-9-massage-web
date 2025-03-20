@@ -350,19 +350,19 @@ export default function Home() {
                   <div className="bg-white p-2 rounded-full shadow-md">
                     <MapPin className="w-5 h-5 text-amber-600" />
                   </div>
-                  <span className="text-neutral-800">Wilton Place</span>
+                  <span className="text-neutral-800">N. Wilton Place, California</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="bg-white p-2 rounded-full shadow-md">
                     <Clock className="w-5 h-5 text-amber-600" />
                   </div>
-                  <span className="text-neutral-800">Open Mon-Sun: 10am - 9:30pm</span>
+                  <span className="text-neutral-800">Open Mon-Sun: 10am - 9pm</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="bg-white p-2 rounded-full shadow-md">
                     <Phone className="w-5 h-5 text-amber-600" />
                   </div>
-                  <span className="text-neutral-800">(555) 123-4567</span>
+                  <span className="text-neutral-800">(323)-395-4079</span>
                 </div>
               </div>
             </div>
