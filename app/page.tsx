@@ -477,21 +477,19 @@ export default function Home() {
               <div>
                 <h4 className="text-lg font-bold mb-4">Hours</h4>
                 <ul className="space-y-2 text-amber-100">
-                  <li>Monday - Friday: 10:00am - 9:30pm</li>
-                  <li>Saturday: 10:00am - 9:30pm</li>
-                  <li>Sunday: 10:00am - 9:30pm</li>
+                  <li>Monday - Sunday: 10:00am - 9:00pm</li>
                 </ul>
               </div>
               <div>
                 <h4 className="text-lg font-bold mb-4">Contact</h4>
                 <ul className="space-y-2 text-amber-100">
-                  <li>Wilton Place</li>
-                  <li>Los Angeles, CA 90038</li>
+                  <li>N. Wilton Place</li>
+                  <li>Los Angeles, California</li>
                 </ul>
               </div>
             </div>
             <div className="border-t border-amber-700 mt-8 pt-8 text-center text-amber-100">
-              <p>&copy; {new Date().getFullYear()} Cloud 9 Spa. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} Cloud 9 Massage. All rights reserved.</p>
             </div>
           </div>
         </footer>
